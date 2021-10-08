@@ -3,21 +3,23 @@
     <title>Today I Learned...</title>
     <link href="https://hanielburton.github.io/blog/feed.xml" rel="self" />
     <link href="https://hanielburton.github.io/blog" />
-    <updated>2021-10-07T21:26:20-07:00</updated>
+    <updated>2021-10-07T21:43:41-07:00</updated>
     <author>
         <name>Haniel Burton</name>
     </author>
     <id>https://hanielburton.github.io/blog</id>
 
     <entry>
-        <title>Setting page item values with JS from a report or link</title>
+        <title>Using JavaScript to set page item values from a Classic Report in APEX</title>
         <author>
             <name>Haniel Burton</name>
         </author>
         <link href="https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/"/>
         <id>https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/</id>
+            <category term="OrclAPEX"/>
+            <category term="JavaScript"/>
 
-        <updated>2021-10-07T21:26:20-07:00</updated>
+        <updated>2021-10-07T21:43:41-07:00</updated>
             <summary>
                 <![CDATA[
                      Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement: javascript:apex.item("P4_LOC").setValue("#LOC#"); apex.item("P4_DEPTNO").setValue("#DEPTNO#"); A better practice would be to create a JavaScript function that does your dirty deeds and the call that once: javascript:MyFunction(#LOC#, #DEPTNO#); 

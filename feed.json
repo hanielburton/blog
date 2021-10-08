@@ -12,16 +12,18 @@
         {
             "id": "https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/",
             "url": "https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/",
-            "title": "Setting page item values with JS from a report or link",
+            "title": "Using JavaScript to set page item values from a Classic Report in APEX",
             "summary": " Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement: javascript:apex.item(\"P4_LOC\").setValue(\"#LOC#\"); apex.item(\"P4_DEPTNO\").setValue(\"#DEPTNO#\"); A better practice would be to create a JavaScript function that does your dirty deeds and the call that once: javascript:MyFunction(#LOC#, #DEPTNO#); ",
             "content_html": "<p><!-- wp:paragraph --></p>\n<p>Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement:</p>\n<p><code>javascript:apex.item(\"P4_LOC\").setValue(\"#LOC#\"); apex.item(\"P4_DEPTNO\").setValue(\"#DEPTNO#\");</code></p>\n<p>A better practice would be to create a JavaScript function that does your dirty deeds and the call that once:</p>\n<p><code>javascript:MyFunction(#LOC#, #DEPTNO#);</code></p>\n<p> </p>\n<p><!-- /wp:paragraph --></p>",
             "author": {
                 "name": "Haniel Burton"
             },
             "tags": [
+                   "OrclAPEX",
+                   "JavaScript"
             ],
             "date_published": "2021-10-04T18:38:22-07:00",
-            "date_modified": "2021-10-07T21:26:20-07:00"
+            "date_modified": "2021-10-07T21:43:41-07:00"
         }
     ]
 }
