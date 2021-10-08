@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Today I Learned...</title>
+    <link href="https://hanielburton.github.io/blog/feed.xml" rel="self" />
+    <link href="https://hanielburton.github.io/blog" />
+    <updated>1969-12-31T16:00:00-08:00</updated>
+    <author>
+        <name>Haniel Burton</name>
+    </author>
+    <id>https://hanielburton.github.io/blog</id>
+
+</feed>
