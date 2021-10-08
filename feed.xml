@@ -3,10 +3,36 @@
     <title>Today I Learned...</title>
     <link href="https://hanielburton.github.io/blog/feed.xml" rel="self" />
     <link href="https://hanielburton.github.io/blog" />
-    <updated>1969-12-31T16:00:00-08:00</updated>
+    <updated>2021-10-07T21:26:20-07:00</updated>
     <author>
         <name>Haniel Burton</name>
     </author>
     <id>https://hanielburton.github.io/blog</id>
 
+    <entry>
+        <title>Setting page item values with JS from a report or link</title>
+        <author>
+            <name>Haniel Burton</name>
+        </author>
+        <link href="https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/"/>
+        <id>https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/</id>
+
+        <updated>2021-10-07T21:26:20-07:00</updated>
+            <summary>
+                <![CDATA[
+                     Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement: javascript:apex.item("P4_LOC").setValue("#LOC#"); apex.item("P4_DEPTNO").setValue("#DEPTNO#"); A better practice would be to create a JavaScript function that does your dirty deeds and the call that once: javascript:MyFunction(#LOC#, #DEPTNO#); 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><!-- wp:paragraph --></p>
+<p>Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement:</p>
+<p><code>javascript:apex.item("P4_LOC").setValue("#LOC#"); apex.item("P4_DEPTNO").setValue("#DEPTNO#");</code></p>
+<p>A better practice would be to create a JavaScript function that does your dirty deeds and the call that once:</p>
+<p><code>javascript:MyFunction(#LOC#, #DEPTNO#);</code></p>
+<p> </p>
+<p><!-- /wp:paragraph --></p>
+            ]]>
+        </content>
+    </entry>
 </feed>
