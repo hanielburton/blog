@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://hanielburton.github.io/blog/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://blog.hanielb.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://hanielburton.github.io/blog/</loc>
+<loc>https://blog.hanielb.com/</loc>
 </url>
 <url>
-<loc>https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/</loc>
+<loc>https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/</loc>
+<lastmod>2021-10-08T19:33:13-07:00</lastmod>
+</url>
+<url>
+<loc>https://blog.hanielb.com/setting-page-item-values-with-js-from-a-report-or-link/</loc>
 <lastmod>2021-10-07T21:43:41-07:00</lastmod>
 </url>
 </urlset>

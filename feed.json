@@ -2,16 +2,28 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Today I Learned...",
     "description": "",
-    "home_page_url": "https://hanielburton.github.io/blog",
-    "feed_url": "https://hanielburton.github.io/blog/feed.json",
+    "home_page_url": "https://blog.hanielb.com",
+    "feed_url": "https://blog.hanielb.com/feed.json",
     "user_comment": "",
     "author": {
         "name": "Haniel Burton"
     },
     "items": [
         {
-            "id": "https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/",
-            "url": "https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/",
+            "id": "https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/",
+            "url": "https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/",
+            "title": "How to authenticate to an OUATH2 ORDS API with Postman",
+            "author": {
+                "name": "Haniel Burton"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-08T19:33:13-07:00",
+            "date_modified": "2021-10-08T19:33:13-07:00"
+        },
+        {
+            "id": "https://blog.hanielb.com/setting-page-item-values-with-js-from-a-report-or-link/",
+            "url": "https://blog.hanielb.com/setting-page-item-values-with-js-from-a-report-or-link/",
             "title": "Using JavaScript to set page item values from a Classic Report in APEX",
             "summary": " Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement: javascript:apex.item(\"P4_LOC\").setValue(\"#LOC#\"); apex.item(\"P4_DEPTNO\").setValue(\"#DEPTNO#\"); A better practice would be to create a JavaScript function that does your dirty deeds and the call that once: javascript:MyFunction(#LOC#, #DEPTNO#); ",
             "content_html": "<p><!-- wp:paragraph --></p>\n<p>Simple use case, you can set multiple items by calling apex.item().set_value multiple times in the same statement:</p>\n<p><code>javascript:apex.item(\"P4_LOC\").setValue(\"#LOC#\"); apex.item(\"P4_DEPTNO\").setValue(\"#DEPTNO#\");</code></p>\n<p>A better practice would be to create a JavaScript function that does your dirty deeds and the call that once:</p>\n<p><code>javascript:MyFunction(#LOC#, #DEPTNO#);</code></p>\n<p> </p>\n<p><!-- /wp:paragraph --></p>",

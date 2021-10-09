@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://hanielburton.github.io/blog/sitemap.xml
+Sitemap: https://blog.hanielb.com/sitemap.xml

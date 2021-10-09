@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Today I Learned...</title>
-    <link href="https://hanielburton.github.io/blog/feed.xml" rel="self" />
-    <link href="https://hanielburton.github.io/blog" />
-    <updated>2021-10-07T21:43:41-07:00</updated>
+    <link href="https://blog.hanielb.com/feed.xml" rel="self" />
+    <link href="https://blog.hanielb.com" />
+    <updated>2021-10-08T19:33:13-07:00</updated>
     <author>
         <name>Haniel Burton</name>
     </author>
-    <id>https://hanielburton.github.io/blog</id>
+    <id>https://blog.hanielb.com</id>
 
+    <entry>
+        <title>How to authenticate to an OUATH2 ORDS API with Postman</title>
+        <author>
+            <name>Haniel Burton</name>
+        </author>
+        <link href="https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/"/>
+        <id>https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/</id>
+
+        <updated>2021-10-08T19:33:13-07:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
     <entry>
         <title>Using JavaScript to set page item values from a Classic Report in APEX</title>
         <author>
             <name>Haniel Burton</name>
         </author>
-        <link href="https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/"/>
-        <id>https://hanielburton.github.io/blog/setting-page-item-values-with-js-from-a-report-or-link/</id>
+        <link href="https://blog.hanielb.com/setting-page-item-values-with-js-from-a-report-or-link/"/>
+        <id>https://blog.hanielb.com/setting-page-item-values-with-js-from-a-report-or-link/</id>
             <category term="OrclAPEX"/>
             <category term="JavaScript"/>
 
