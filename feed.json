@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://blog.hanielb.com/easily-integrate-apex-and-usps-web-tools-api/",
+            "url": "https://blog.hanielb.com/easily-integrate-apex-and-usps-web-tools-api/",
+            "title": "Easily Integrate APEX and USPS Web Tools API",
+            "summary": "Step 1. Register and read the the Terms and Conditions Registration is easy and only takes a couple of minutes to fill out some basic information about yourself and optionally how you expect to use the APIs. Within a few minutes, you should get a&hellip;",
+            "content_html": "<h2 class=\"msg--highlight\">Step 1. Register and read the the Terms and Conditions</h2>\n<p>Registration is easy and only takes a couple of minutes to fill out some basic information about yourself and optionally how you expect to use the APIs.</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://blog.hanielb.com/media/posts/6/2021-10-10_17-53-19.jpg\" sizes=\"(min-width: 61.3125em) 50vw, 100vw\" srcset=\"https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-xs.jpg 300w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-sm.jpg 480w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-md.jpg 768w\"  alt=\"\" width=\"510\" height=\"595\"></figure>\n<p>Within a few minutes, you should get a registration confirmation email with your API credentials and additional information including a list of APIs you're allowed to access and next steps to begin using the USPS Web Tools.</p>\n<p class=\"msg msg--highlight  \">Don't skip over the Terms and Conditions! There are a few important guidelines to follow that I will summarize, but there may be others that affect you.</p>\n<p class=\"msg msg--info\">USPS data can only be used to facilitate USPS shipping transactions. </p>\n<p class=\"msg msg--info\">APIs should only be used on a transactional basis, batch cleansing of a database is not allowed.</p>\n<p class=\"msg msg--highlight  msg--info\">Your credentials should not be packaged in any code intended for resale or distribution to others, basically don't share your credentials.</p>\n<p> </p>\n<p> </p>\n<p> </p>",
+            "author": {
+                "name": "Haniel Burton"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-10-10T18:15:46-07:00",
+            "date_modified": "2021-10-10T18:15:46-07:00"
+        },
+        {
             "id": "https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/",
             "url": "https://blog.hanielb.com/how-to-authenticate-to-an-ouath2-ords-api-with-postman/",
             "title": "How to authenticate to an OUATH2 ORDS API with Postman",
