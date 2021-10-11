@@ -3,7 +3,7 @@
     <title>Today I Learned...</title>
     <link href="https://blog.hanielb.com/feed.xml" rel="self" />
     <link href="https://blog.hanielb.com" />
-    <updated>2021-10-10T18:15:46-07:00</updated>
+    <updated>2021-10-10T19:10:05-07:00</updated>
     <author>
         <name>Haniel Burton</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://blog.hanielb.com/easily-integrate-apex-and-usps-web-tools-api/"/>
         <id>https://blog.hanielb.com/easily-integrate-apex-and-usps-web-tools-api/</id>
 
-        <updated>2021-10-10T18:15:46-07:00</updated>
+        <updated>2021-10-10T19:10:05-07:00</updated>
             <summary>
                 <![CDATA[
                     Step 1. Register and read the the Terms and Conditions Registration is easy and only takes a couple of minutes to fill out some basic information about yourself and optionally how you expect to use the APIs. Within a few minutes, you should get a&hellip;
@@ -25,15 +25,52 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 class="msg--highlight">Step 1. Register and read the the Terms and Conditions</h2>
+                <p>Step 1. Register and read the the Terms and Conditions</p>
 <p>Registration is easy and only takes a couple of minutes to fill out some basic information about yourself and optionally how you expect to use the APIs.</p>
 <figure class="post__image"><img loading="lazy"  src="https://blog.hanielb.com/media/posts/6/2021-10-10_17-53-19.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-xs.jpg 300w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-sm.jpg 480w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_17-53-19-md.jpg 768w"  alt="" width="510" height="595"></figure>
-<p>Within a few minutes, you should get a registration confirmation email with your API credentials and additional information including a list of APIs you're allowed to access and next steps to begin using the USPS Web Tools.</p>
+<p>Within a few minutes, you should get a registration confirmation email with your API credentials and additional information including a list of APIs you're allowed to access, the production URL to access USPS Web Tools Servers, and next steps to begin using the Web Tools.</p>
 <p class="msg msg--highlight  ">Don't skip over the Terms and Conditions! There are a few important guidelines to follow that I will summarize, but there may be others that affect you.</p>
-<p class="msg msg--info">USPS data can only be used to facilitate USPS shipping transactions. </p>
-<p class="msg msg--info">APIs should only be used on a transactional basis, batch cleansing of a database is not allowed.</p>
-<p class="msg msg--highlight  msg--info">Your credentials should not be packaged in any code intended for resale or distribution to others, basically don't share your credentials.</p>
+<ul>
+<li>
+<p>USPS data can only be used to facilitate USPS shipping transactions.</p>
+</li>
+<li>
+<p>APIs should only be used on a transactional basis, batch cleansing of a database is not allowed.</p>
+</li>
+<li>
+<p>Your credentials should not be packaged in any code intended for resale or distribution to others, basically don't share your credentials.</p>
+</li>
+</ul>
 <p> </p>
+<h2>Step 2. <span style="text-decoration: line-through;">Read</span> Review the docs</h2>
+<p>I'll cover the basics here, but the APIs are well documented with examples for several use cases and detailed information about the data returned.</p>
+<p>The <a href="https://www.usps.com/business/web-tools-apis/general-api-developer-guide.pdf" target="_blank" rel="noopener noreferrer">Step-By-Step Instructions</a> provide important information applicable to all available APIs and the specific API User's Guides for each API include specific technical details and explain the API in detail. </p>
+<figure class="post__image"><img loading="lazy"  src="https://blog.hanielb.com/media/posts/6/2021-10-10_18-43-21.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-43-21-xs.jpg 300w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-43-21-sm.jpg 480w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-43-21-md.jpg 768w"  alt="" width="1132" height="755"></figure>
+<p>All of the docs are available here: <a href="https://www.usps.com/business/web-tools-apis/documentation-updates.htm" target="_blank" rel="noopener noreferrer">https://www.usps.com/business/web-tools-apis/documentation-updates.htm</a></p>
+<p>For this post, I'll mostly refer to information from the Address Information API User Guide: <a href="https://www.usps.com/business/web-tools-apis/address-information-api.htm" target="_blank" rel="noopener noreferrer">https://www.usps.com/business/web-tools-apis/address-information-api.htm</a></p>
+<figure class="post__image"><img loading="lazy"  src="https://blog.hanielb.com/media/posts/6/2021-10-10_18-42-46.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-42-46-xs.jpg 300w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-42-46-sm.jpg 480w ,https://blog.hanielb.com/media/posts/6/responsive/2021-10-10_18-42-46-md.jpg 768w"  alt="" width="339" height="216"></figure>
+<p>By now you should have a couple of details we'll use next:</p>
+<ol>
+<li>Your API credentials</li>
+<li>The production URL: <a href="https://secure.shippingapis.com/ShippingAPI.dll" target="_blank" rel="noopener noreferrer">https://secure.shippingapis.com/ShippingAPI.dll</a></li>
+</ol>
+<h2>Step 3. Add an ACL to allow accessing the API URL</h2>
+<p>For this project, I used an Autonomous Database, so my wallet was already configured, but you may need to configure your own wallet depending on your environment.</p>
+<p><code style="font-weight: var(--font-weight-normal);">BEGIN</code></p>
+<div>
+<div><code>   DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(</code></div>
+<div><code>         host =&gt; 'secure.shippingapis.com',</code></div>
+<div><code>         ace =&gt;  xs$ace_type(privilege_list =&gt; xs$name_list('http'),</code></div>
+<div><code>                             principal_name =&gt; 'SAMPLES',</code></div>
+<div><code>                             principal_type =&gt; xs_acl.ptype_db));</code></div>
+<div><code>END;</code></div>
+</div>
+<p> </p>
+<h2>Step 3. Create a new REST Data Source in an existing APEX app</h2>
+<p>Assuming you already an APEX application created, go to </p>
+<ol>
+<li>In your APEX app, go to Shared Components &gt; REST Data Sources  and click Create &gt;</li>
+</ol>
 <p> </p>
 <p> </p>
             ]]>
