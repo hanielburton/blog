@@ -3,7 +3,7 @@
     <title>Today I Learned...</title>
     <link href="https://blog.hanielb.com/feed.xml" rel="self" />
     <link href="https://blog.hanielb.com" />
-    <updated>2021-10-11T18:02:07-07:00</updated>
+    <updated>2021-10-11T20:50:00-07:00</updated>
     <author>
         <name>Haniel Burton</name>
     </author>
@@ -21,7 +21,7 @@
             <category term="JoelKallmanDay"/>
             <category term="Dynamic Actions"/>
 
-        <updated>2021-10-11T18:02:07-07:00</updated>
+        <updated>2021-10-11T20:50:00-07:00</updated>
             <summary>
                 <![CDATA[
                     Introduction A common requirement in APEX applications, big or small, is to capture address information. Address information is notoriously hard to deal with due to the variety of ways to enter an address and the fact that addresses are constantly changing. The good news is&hellip;
@@ -88,7 +88,7 @@
 </div>
 <p>For other configurations, you may also need to configure an SSL wallet before you can connect. There are several guides available on how to set one up, check this one out by Adrian Png: <a href="https://fuzziebrain.com/content/id/1720/" target="_blank" rel="noopener noreferrer">https://fuzziebrain.com/content/id/1720/</a></p>
 <h3>Step 3. Create a new REST Data Source in an existing APEX app</h3>
-<p>Assuming you already an APEX application created, follow these steps:</p>
+<p>Assuming you already created an APEX application, follow these steps:</p>
 <ul>
 <li>In your APEX app, go to Shared Components &gt; REST Data Sources, click Create &gt;.</li>
 <li>Click Next &gt; to create From Scratch.</li>
